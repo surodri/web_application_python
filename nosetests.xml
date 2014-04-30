@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="2" errors="1" failures="0" skip="0"><testcase classname="audit_trail_system.test.functional.test_order_functional.FunctionalTestOrder" name="test_order_functional" time="0.006"><error type="webtest.app.AppError" message="Bad response: 502 Bad Gateway (not 200 OK or 3xx redirect for http://localhost:8888/order/1)&#10;502 Bad Gateway&#10;&#10;Bad gateway.&#10;&#10;   "><![CDATA[Traceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/Users/Thoughtworker/PycharmProjects/audit_trail/audit_trail_system/test/functional/test_order_functional.py", line 7, in test_order_functional
+    resp = app.get('/order/1')
+  File "/Users/Thoughtworker/PycharmProjects/audit_trail/audit_trail_env/lib/python2.7/site-packages/webtest/app.py", line 212, in get
+    expect_errors=expect_errors)
+  File "/Users/Thoughtworker/PycharmProjects/audit_trail/audit_trail_env/lib/python2.7/site-packages/webtest/app.py", line 521, in do_request
+    self._check_status(status, res)
+  File "/Users/Thoughtworker/PycharmProjects/audit_trail/audit_trail_env/lib/python2.7/site-packages/webtest/app.py", line 550, in _check_status
+    res)
+AppError: Bad response: 502 Bad Gateway (not 200 OK or 3xx redirect for http://localhost:8888/order/1)
+502 Bad Gateway
+
+Bad gateway.
+
+   
+]]></error></testcase><testcase classname="audit_trail_system.test.units.test_order.TestOrder" name="test_order_should_return_1" time="0.000"></testcase></testsuite>

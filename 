@@ -1,0 +1,10 @@
+import unittest
+import webtest
+
+class FunctionalTestOrder(unittest.TestCase):
+    def setUp(self):
+        from webtest import TestApp
+        app = TestApp('172.22.1.29:8888')
+    def test_order_functional(self):
+        resp = app.get('/order/1', status=200)
+        assert resp.status_int == 200
